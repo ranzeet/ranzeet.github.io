@@ -476,3 +476,26 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Text SLider */
+.text-slider-items {
+  display: none;
+}
+
+.cursor {
+  display: inline-block;
+  background-color: var(--clr-dark);
+  margin-right: 0.2rem;
+  width: 2px;
+  animation: blink 1s infinite;
+}
+.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: var(--clr-dark); }
+  49% { background-color: var(--clr-dark); }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: var(--clr-dark); }
+}
