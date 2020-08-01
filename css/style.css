@@ -469,8 +469,16 @@ header {
 
 .portfolio-item-individual {
     padding: 0 2em 2em;
-    max-width: 1000px;
+    /*max-width: 1000px;*/
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
+}
+
+.portfolio-item-individual img {
+    box-shadow: var(--bs);
+    max-width: 100%;
+    height: auto;
 }
 
 .portfolio-item-individual p {
@@ -500,4 +508,16 @@ header {
   50% { background-color: transparent; }
   99% { background-color: transparent; }
   100%  { background-color: var(--clr-dark); }
+}
+
+
+.resume__note {
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-reg);
+}
+
+.resume__note a {
+    color: var(--clr-dark);
+    font-weight: var(--fw-bold);
+    text-decoration: none;
 }
